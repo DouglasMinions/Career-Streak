@@ -1,0 +1,8 @@
+th,
+td {
+  @apply text-center  border border-slate-300;
+}
+
+th {
+  @apply font-bold;
+}

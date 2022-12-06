@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-color-slate {
+  background-color: #f3f2ef;
+}
+
+.bg-color-blue {
+  @apply bg-blue-200;
+}
+
+.btn-app {
+  @apply bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full;
+}
+
+@layer components {
+  .card {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+    cursor: pointer;
+  }
+}

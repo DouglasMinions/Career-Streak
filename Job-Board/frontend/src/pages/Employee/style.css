@@ -1,0 +1,23 @@
+input {
+  @apply w-11/12 border rounded shadow p-2 mb-2;
+}
+
+form {
+  text-align: center;
+}
+
+.card-50 {
+  width: 50rem;
+}
+
+.btn {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full;
+}
+
+.bg-profile {
+  @apply bg-cyan-50;
+}
+
+.header {
+  @apply uppercase font-semibold text-lg;
+}
