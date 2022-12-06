@@ -1,0 +1,13 @@
+# cat docker-compose.yml
+version: '3.3'
+services:
+  ### MySQL Container
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile.yml
+      args:
+        - MYSQL_DATABASE=${MYSQL_DATABASE}
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "${MYSQL_PORT}:3306"

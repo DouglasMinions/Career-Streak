@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  sample-prod:
+    container_name: blog-client
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '3000:81'
+
+
+# https://mherman.org/blog/dockerizing-a-react-app/
