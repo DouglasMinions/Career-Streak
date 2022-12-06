@@ -30,7 +30,7 @@ function Analytics(props) {
     plugins: {
       title: {
         display: true,
-        text: "Analytics for Carrier Streak",
+        text:  `Analytics for ${props.name}`,
       },
     },
   };
