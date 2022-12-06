@@ -63,9 +63,20 @@ const Header = () => {
           )}
           {user && (
             <li>
-              <Link to="/analytics">Analytics</Link>
+              <Link to="/analytics" className="mr-5">
+                Analytics
+              </Link>
             </li>
           )}
+          <li className="mr-5">
+            <a
+              href="https://private-chat.onrender.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chat
+            </a>
+          </li>
         </span>
 
         {!user ? (
