@@ -11,7 +11,7 @@ const EmployeeView = (props) => {
     e.preventDefault();
     axios.put(
       "http://localhost:5000/api/jobs/hire",
-      { applicantId: applicant.employee._id, jobId: job._id },
+      { applicantId: applicant?.employee?._id, jobId: job?._id },
       getOptions()
     );
     setBtnText("Hired");

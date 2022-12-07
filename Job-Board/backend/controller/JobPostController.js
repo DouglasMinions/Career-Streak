@@ -85,7 +85,7 @@ const postJobs = asyncHandler(async (req, res) => {
     throw new Error("Server error while creating job post");
   }
 
-  const jobPosts = await JobPost.find();
+  const jobPosts = await JobPost.find().sort({ createdAt: -1 });
   res.status(201).json(jobPosts);
 });
 
