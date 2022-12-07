@@ -96,13 +96,13 @@ const Write = () => {
           <div className="cat">
             <input
               type="radio"
-              checked={cat === "market"}
+              checked={cat === "business"}
               name="cat"
-              value="market"
-              id="market"
+              value="business"
+              id="business"
               onChange={(e) => setCat(e.target.value)}
             />
-            <label htmlFor="market">Market</label>
+            <label htmlFor="business">Business</label>
           </div>
           <div className="cat">
             <input

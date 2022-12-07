@@ -8,6 +8,7 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   const cat = useLocation().search
+  const imgPath = "upload/"
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,14 +34,16 @@ const Home = () => {
         {posts.map((post) => (
           <div className="post" key={post.id}>
             <div className="img">
-              <img src={`${post.img}`} alt="" />
+              <img src={`${imgPath}${post.img}`} alt="" />
             </div>
             <div className="content">
               <Link className="link" to={`/post/${post.id}`}>
-                <h1>{post.title}</h1>
+                <h2>{post.title}</h2>
               </Link>
-              <p>{getText(post.desc)}</p>
-              <button>Read More</button>
+              <p>{getText(post.desc).substring(0, 200)}</p>
+              <Link className="link" to={`/post/${post.id}`}>
+                <button>Read More</button>
+              </Link>
             </div>
           </div>
         ))}

@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react";
 export const AuthContext = createContext();
 
 export const AuthContexProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(
+  const [currentUser, setCurrentUser] = useState( // string in local storage to object
     JSON.parse(localStorage.getItem("user")) || null
   );
 
@@ -18,6 +18,7 @@ export const AuthContexProvider = ({ children }) => {
     setCurrentUser(null);
   };
 
+  // changes user everytime currentUser changes
   useEffect(() => {
     localStorage.setItem("user", JSON.stringify(currentUser));
   }, [currentUser]);

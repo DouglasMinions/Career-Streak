@@ -15,8 +15,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="links">
-          <Link className="link" to="/?cat=market">
-            <h6>MARKET</h6>
+          <Link className="link" to="/?cat=business">
+            <h6>BUSINESS</h6>
           </Link>
           <Link className="link" to="/?cat=jobs">
             <h6>JOBS</h6>
