@@ -45,7 +45,7 @@ const JobReview = () => {
                       <>
                         <Link
                           to="/employee/each"
-                          state={{ applicant }}
+                          state={{ applicant, job }}
                           className="text-blue-600"
                         >
                           {applicant.user.name}

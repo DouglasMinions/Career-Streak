@@ -37,7 +37,7 @@ const EmployerApproval = () => {
                   <div className="flex flex-col items-center pb-8 ">
                     <img
                       className="mb-3 w-24 h-24 rounded-full shadow-lg m-2"
-                      src={emp.logo}
+                      src={ require(`../Jobs/${emp.company}.jpg`) }
                       alt=""
                     />
                     <h5 className="mb-1 text-xl font-medium text-white">

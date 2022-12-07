@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Job from "./Job";
+import { FaMicrosoft } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import "./style.css";
 import formattedInputDate from "../../config/dateFormatter";
 import { getLoggedInEmployer } from "../../features/employer/employerSlice";
@@ -83,7 +85,7 @@ const Main = () => {
         <div className="basis-3/4 overflow-auto hover:overflow-scroll h-screen bg-white">
           <div className="rounded-md m-3 bg-white border-2 p-6">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+              src={require(`./${selectedJob.company}.jpg`)}
               className="rounded-md h-12 w-12 m-5"
               alt="job"
             />

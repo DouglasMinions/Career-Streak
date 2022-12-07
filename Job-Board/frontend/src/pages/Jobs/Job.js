@@ -1,3 +1,5 @@
+import { FaMicrosoft, FaFacebook } from "react-icons/fa";
+
 const Job = ({ job, click }) => {
   return (
     <div className="cursor-pointer">
@@ -6,10 +8,10 @@ const Job = ({ job, click }) => {
         onClick={() => click(job._id)}
       >
         <img
-          src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
-          className="rounded-md h-12 w-12 m-5"
-          alt="job"
-        />
+                src={ require(`./${job.company}.jpg`) }
+                className="rounded-md h-12 w-12 m-5"
+                alt="job"
+              />
         <div className="p-6 flex flex-col justify-start">
           <h6 className="text-gray-900 text-lg font-medium mb-2 ">
             {job.title}

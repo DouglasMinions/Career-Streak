@@ -78,11 +78,7 @@ const EmployerProfile = () => {
           backgroundImage: `url(${backImage})`,
         }}
       >
-        {/* <img
-          className="relative bottom-6 right-1 h-14 w-14"
-          // src={require("./logo.png")}
-          alt="Card cap"
-        /> */}
+        
       </div>
       <form onSubmit={onSubmit}>
         <div className="flex justify-center pt-10">
